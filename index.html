@@ -1,81 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Procurement Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body {background:#f4f7fa;color:#1f2937;line-height:1.6;}
+header {background:#0f172a;color:white;padding:80px 20px;text-align:center;}
+header h1 {font-size:48px;font-weight:700;}
+header p {margin-top:15px;font-size:20px;color:#cbd5e1;}
+.btn {
+display:inline-block;
+margin:20px 10px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+}
+.btn:hover {background:#1e40af;}
+section {padding:60px 20px;max-width:1000px;margin:auto;}
+h2 {margin-bottom:30px;font-size:32px;color:#0f172a;}
+.card-container {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.card {
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+.card:hover {transform:translateY(-5px);}
+.skills span {
+display:block;
+margin-bottom:15px;
+}
+.progress {
+background:#e5e7eb;
+height:8px;
+border-radius:5px;
+margin-top:5px;
+}
+.progress-bar {
+height:8px;
+background:#2563eb;
+border-radius:5px;
+}
+footer {
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate web developer.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </section>
-    </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-showcase">
-                <article>
-                    <h3>Project One</h3>
-                    <p>Description of project one.</p>
-                </article>
-                <article>
-                    <h3>Project Two</h3>
-                    <p>Description of project two.</p>
-                </article>
-                <article>
-                    <h3>Project Three</h3>
-                    <p>Description of project three.</p>
-                </article>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <label for="html">HTML</label>
-                    <progress id="html" value="90" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <label for="css">CSS</label>
-                    <progress id="css" value="80" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <label for="js">JavaScript</label>
-                    <progress id="js" value="70" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <label for="react">React</label>
-                    <progress id="react" value="75" max="100"></progress>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Jay Mingami. All Rights Reserved.</p>
-    </footer>
+
+<header>
+<h1>Your Name</h1>
+<p>Procurement & Supply Chain Analyst | Data-Driven Decision Maker</p>
+<a href="#projects" class="btn">View Projects</a>
+<a href="CV.pdf" class="btn">Download CV</a>
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>I am a Master's student specializing in procurement and supply chain management with strong analytical capabilities. I design Excel-based forecasting systems, automate reporting with VBA, and build data-driven dashboards to support strategic sourcing and cost optimization decisions.</p>
+</section>
+
+<section>
+<h2>Core Skills</h2>
+<div class="skills">
+<span>Advanced Excel
+<div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+</span>
+<span>VBA Automation
+<div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+</span>
+<span>Inventory Forecasting
+<div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+</span>
+<span>Procurement Analytics
+<div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card-container">
+
+<div class="card">
+<h3>Inventory Forecasting Tool</h3>
+<p>Developed an automated Excel forecasting model reducing stock variance by 18% and improving reorder accuracy using demand trend analysis.</p>
+<p><strong>Tools:</strong> Excel, VBA</p>
+</div>
+
+<div class="card">
+<h3>Procurement KPI Dashboard</h3>
+<p>Built dynamic supplier performance dashboard tracking OTIF, cost variance, and lead time efficiency.</p>
+<p><strong>Tools:</strong> Pivot Tables, Data Visualization</p>
+</div>
+
+<div class="card">
+<h3>Cost Analysis Model</h3>
+<p>Designed cost breakdown analysis model supporting strategic sourcing decisions and supplier negotiations.</p>
+<p><strong>Tools:</strong> Excel Advanced Formulas</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Email: your@email.com</p>
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+<p>© 2026 Your Name | Procurement Portfolio</p>
+</footer>
+
 </body>
 </html>
